@@ -1,60 +1,305 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <!-- ---- Meta Tags ---- -->
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- ---- Font Awesome ---- -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- ---- Bootstrap CSS ---- -->
     <link rel="stylesheet" href="css/bootstrap.min.css" />
+
+    <!-- ---- Custom CSS ---- -->
     <link rel="stylesheet" href="css/main.css" />
 
     <title>Ultra Shopping Center</title>
-  </head>
-  <body>
-    <!-- Navbar -->
-    <nav class="navbar bg-warning">
-      <div class="container">
-        <a
-          href="#"
-          class="navbar-brand d-md-flex align-items-center justify-content-between"
-        >
-          <img src="images/shopping-bag-icon.png" alt="Site icon" />
-          <span id="brand-name">ULTRA</span>
-        </a>
-        <div class="nav btns">
-          <button class="btn position-relative">
-            <i class="fa fa-shopping-cart"></i>
-            <span
-              class="badge position-absolute top-0 bg-primary translate-middle start-100"
-              >5</span
-            >
-          </button>
-          <button class="btn position-relative">
-            <i class="fa fa-heart"></i>
-            <span
-              class="badge position-absolute top-0 bg-primary translate-middle start-100"
-              >2</span
-            >
-          </button>
-          <button class="btn">
-            <i class="fa fa-search"></i>
-          </button>
+</head>
+
+<body>
+    <!-- ---- Navbar ---- -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+        <div class="container">
+            <a href="index.html" class="navbar-brand d-flex align-items-center justify-content-between order-lg-0">
+                <!-- <img src="images/shopping-bag-icon.png" alt="Site icon" /> -->
+                <span class="h1"><i class="fa fa-explosion me-2"></i></span>
+                <span class="text-danger" id="brand-name">ULTRA</span>
+                <!-- <span class="text-dark" id="brand-name">COMMERCE</span> -->
+            </a>
+            <div class="nav-btns order-lg-2">
+                <button class="btn position-relative mini-icon-button" type="button">
+                    <i class="fa fa-shopping-cart"></i>
+                    <span class="badge position-absolute top-0 bg-danger translate-middle start-100">5</span>
+                </button>
+                <button class="btn position-relative mini-icon-button" type="button">
+                    <i class="fa fa-heart"></i>
+                    <span class="badge position-absolute top-0 bg-danger translate-middle start-100">2</span>
+                </button>
+                <button class="btn mini-icon-button" type="button">
+                    <i class="fa fa-search"></i>
+                </button>
+            </div>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse order-lg-1" id="navMenu">
+                <ul class="navbar-nav mx-auto text-center">
+                    <li class="nav-item p-2">
+                        <a href="#home" class="nav-link text-dark">Home</a>
+                    </li>
+                    <li class="nav-item p-2">
+                        <a href="#collection" class="nav-link text-dark">Collection</a>
+                    </li>
+                    <li class="nav-item p-2">
+                        <a href="#specials" class="nav-link text-dark">Specials</a>
+                    </li>
+                    <li class="nav-item p-2">
+                        <a href="#blogs" class="nav-link text-dark">Blogs</a>
+                    </li>
+                    <li class="nav-item p-2">
+                        <a href="#about" class="nav-link text-dark">About Us</a>
+                    </li>
+                    <li class="nav-item p-2">
+                        <a href="#popular" class="nav-link text-dark">Popular</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-      </div>
     </nav>
 
-    <!-- ---- Bootstrap CSS ---- -->
+    <!-- ---- Hero ---- -->
+    <section id="hero" class="carousel slide vh-100" data-bs-ride="carousel" style="padding-top: 104px">
+        <div class="container carousel-inner h-100 d-flex align-items-center">
+            <div class="carousel-item text-center active">
+                <h2 class="text-white">Best Collections</h2>
+                <h1 class="text-white py-2 fw-bold">NEW ARRIVALS</h2>
+                    <a href="#" class="btn">SHOP NOW</a>
+            </div>
+            <div class="carousel-item text-center">
+                <h2 class="text-white">Best Price & Offers</h2>
+                <h1 class="text-white py-2 fw-bold">NEW SEASON</h2>
+                    <a href="#" class="btn">BUY NOW</a>
+            </div>
+            <div class="carousel-item text-center">
+                <h2 class="text-white">Best Time to Buy</h2>
+                <h1 class="text-white py-2 fw-bold">SUMMER SALE</h2>
+                    <a href="#" class="btn">GET IT NOW</a>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#hero" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#hero" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </section>
+
+    <!-- ---- Collection ---- -->
+    <section id="collection" class="py-5">
+        <div class="container">
+            <div class="title text-center">
+                <h2 class="position-relative d-inline-block">New Collection</h2>
+            </div>
+            <div class="row g-0">
+                <div class="d-flex flex-wrap mt-5 justify-content-center filter-button-group">
+                    <button class="btn m-2 active-filter-btn" data-filter="*">All</button>
+                    <button class="btn m-2" data-filter=".best">Best Sellers</button>
+                    <button class="btn m-2" data-filter=".featured">Featured</button>
+                    <button class="btn m-2" data-filter=".new">New Arrival</button>
+                </div>
+            </div>
+            <div class="collection-list row g-5 mt-5">
+                <div class="col-md-6 col-lg-4 col-xl-3 featured">
+                    <div class="collection-img position-relative">
+                        <img src="/images/c_formal_gray_shirt.png" alt="item-1" class="w-100">
+                        <span class="bg-primary position-absolute d-flex align-items-center 
+                        justify-content-center text-white">
+                        sale</span>
+                    </div>     
+                    <div class="text-center">
+                        <div class="rating">
+                            <span class="text-primary">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </span>
+                        </div>
+                        <p class="text-capitalize">gray shirt</p>
+                        <span class="fw-bold">$ 49.99</span>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xl-3 featured">
+                    <div class="collection-img position-relative">
+                        <img src="/images/c_pant_girl.png" alt="item-2" class="w-100">
+                        <span class="bg-primary position-absolute d-flex align-items-center 
+                        justify-content-center text-white">
+                        sale</span>
+                    </div>
+                    <div class="text-center">
+                        <div class="rating">
+                            <span class="text-primary">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </span>
+                        </div>
+                        <p class="text-capitalize">pants girl</p>
+                        <span class="fw-bold">$ 86.99</span>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xl-3 new">
+                    <div class="collection-img position-relative">
+                        <img src="/images/c_polo-shirt.png" alt="item-3" class="w-100">
+                        <span class="bg-primary position-absolute d-flex align-items-center 
+                        justify-content-center text-white">
+                        sale</span>
+                    </div>
+                    <div class="text-center">
+                        <div class="rating">
+                            <span class="text-primary">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </span>
+                        </div>
+                        <p class="text-capitalize">polo shirt</p>
+                        <span class="fw-bold">$ 32.25</span>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xl-3 best">
+                    <div class="collection-img position-relative">
+                        <img src="/images/c_shirt-girl.png" alt="item-4" class="w-100">
+                        <span class="bg-primary position-absolute d-flex align-items-center 
+                        justify-content-center text-white">
+                        sale</span>
+                    </div>
+                    <div class="text-center">
+                        <div class="rating">
+                            <span class="text-primary">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </span>
+                        </div>
+                        <p class="text-capitalize">shirt girl</p>
+                        <span class="fw-bold">$ 44.28</span>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xl-3 new">
+                    <div class="collection-img position-relative">
+                        <img src="/images/c_t-shirt_men.png" alt="item-5" class="w-100">
+                        <span class="bg-primary position-absolute d-flex align-items-center 
+                        justify-content-center text-white">
+                        sale</span>
+                    </div>
+                    <div class="text-center">
+                        <div class="rating">
+                            <span class="text-primary">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </span>
+                        </div>
+                        <p class="text-capitalize">t-shirt men</p>
+                        <span class="fw-bold">$ 55.25</span>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xl-3 featured">
+                    <div class="collection-img position-relative">
+                        <img src="/images/c_tunic-shirt_girl.png" alt="item-6" class="w-100">
+                        <span class="bg-primary position-absolute d-flex align-items-center 
+                        justify-content-center text-white">
+                        sale</span>
+                    </div>
+                    <div class="text-center">
+                        <div class="rating">
+                            <span class="text-primary">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </span>
+                        </div>
+                        <p class="text-capitalize">tunic shirt girl</p>
+                        <span class="fw-bold">$ 35.00</span>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xl-3 best">
+                    <div class="collection-img position-relative">
+                        <img src="/images/c_undershirt.png" alt="item-7" class="w-100">
+                        <span class="bg-primary position-absolute d-flex align-items-center 
+                        justify-content-center text-white">
+                        sale</span>
+                    </div>
+                    <div class="text-center">
+                        <div class="rating">
+                            <span class="text-primary">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </span>
+                        </div>
+                        <p class="text-capitalize">under shirt</p>
+                        <span class="fw-bold">$ 22.00</span>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xl-3 new">
+                    <div class="collection-img position-relative">
+                        <img src="/images/c_western-shirt.png" alt="item-7" class="w-100">
+                        <span class="bg-primary position-absolute d-flex align-items-center 
+                        justify-content-center text-white">
+                        sale</span>
+                    </div>
+                    <div class="text-center">
+                        <div class="rating">
+                            <span class="text-primary">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </span>
+                        </div>
+                        <p class="text-capitalize">western shirt</p>
+                        <span class="fw-bold">$ 29.58</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ---- JQuery JS ---- -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- ---- Isotope JS ---- -->
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+
+    <!-- ---- Bootstrap JS ---- -->
     <script src="js/bootstrap.bundle.min.js"></script>
-  </body>
+
+    <!-- ---- Custom JS ---- -->
+    <script src="js/main.js"></script>
+
+</body>
+
 </html>
