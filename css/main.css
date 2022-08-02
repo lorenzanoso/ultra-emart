@@ -125,4 +125,35 @@ body{
     font-family: var(--lg-font);
 }
 
+#newsletter p{
+    max-width: 600px;
+}
 
+#newsletter .input-group{
+    max-width: 500px;
+}
+#newsletter .form-control{
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    
+}
+/* <!-- ---- Newsletter ---- --> */
+#newsletter .btn{
+    background-color: var(--pink);
+    color: #fff;
+    border-color:  var(--pink);
+
+    
+}
+
+#newsletter .btn:hover{
+    background-color: black;
+    border-color: black;
+}
+
+
+/* <!-- ---- Footer ---- --> */
+footer .brand{
+    font-family: var(--lg-font);
+    letter-spacing: 2px;
+}
