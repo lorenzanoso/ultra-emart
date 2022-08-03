@@ -41,10 +41,12 @@ body{
 
 /* <!-- ---- Navbar ---- --> */
 
+.navbar-brand img{
+    width: 30px;
+}
 #brand-name{
-    letter-spacing: 5px;
-    font-weight:500;
-    font-size: 17pt;
+    letter-spacing: 2px;
+    font-family: var(--lg-font);
 }
 .navbar{
     box-shadow: 1px 1px 5px 1px rgba(210, 210, 210, 0.8);
@@ -76,12 +78,6 @@ body{
 .carousel-inner h1{
     font-size: 60px;
     font-family: var(--lg-font) !important;
-}
-
-.carousel-inner .active{
-    background-color: rgba(0,0,0,0.1);
-    padding: 40px;
-    transition: 0.3s;
 }
 
 /* <!-- ---- Collections ---- --> */
